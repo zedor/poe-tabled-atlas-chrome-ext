@@ -75,6 +75,8 @@ chrome.runtime.onInstalled.addListener(function() {
 
 	let buff = chrome.runtime.getManifest();
 	curVersion = buff.version;
+
+	checkForUpdates();
 });
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
@@ -108,12 +110,12 @@ function checkForUpdates() {
 			xhr.response.name
 
 			if( xhr.response.name > curVersion ) {
-				chrome.contextMenus.update(update, {
+				chrome.contextMenus.update("update", {
         			title: 'Update available',
         			contexts: ["all"],
     			});
     		} else {
-    			chrome.contextMenus.update(update, {
+    			chrome.contextMenus.update("update", {
         			title: 'Up to date',
         			contexts: ["all"],
     			});
@@ -123,7 +125,7 @@ function checkForUpdates() {
 		}
 	};
 
-	xhr.open('GET', `https://api.github.com/repos/zedor/poe-map-grabber/releases/latest`, true);
+	xhr.open('GET', `https://github.com/zedor/poe-tabled-atlas-chrome-ext/releases/latest`, true);
 	xhr.send();
 }
 
