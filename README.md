@@ -15,8 +15,9 @@ Alternative AHK script for data grabbing: https://github.com/zedor/poe-map-grabb
 
 I wouldn't necessarily recommend it, it's a pretty hackish solution that exists only until [GGG](http://www.grindinggear.com/) get their shit together and start paying all the technical and design debt they incurred. Consider the alternative [AHK script](https://github.com/zedor/poe-map-grabber), or querying the trade api directly with the river. However, if you're still hell bent on it, here's how:
 
-* Study the extension_example.js on how to implement extension requests (one-way communication because I wasted 5 hours of my life since even google doesn't have their shit together)
-* Look at the examplequery.json for the object construction of the query data
+* Study the ```pseudo-events.js``` on how to implement extension requests (one-way communication because I wasted 5 hours of my life since even google doesn't have their shit together)
+* Look at the ```example_query.json``` for the object construction of the query data
+* Look at the ```example_output.json``` for the object construction of the returned data
 * Add your deployment server (localhost or otherwise) to the ```"matches"``` prop of ```manifest.json``` for development purposes
 * Contact the developer on [reddit](https://www.reddit.com/user/SelenaGomez_/) or [PoE Discord](https://discord.gg/pathofexile) (@saltylena gomez) to release new ```manifest.json```
 
@@ -24,3 +25,19 @@ I wouldn't necessarily recommend it, it's a pretty hackish solution that exists 
 ## DISCLAIMER
 
 * This extension exists for the sole reason of being unable to grab map stash data via poesession login, because as always something related to poe is fucked sideways but at least we can buy new definitely not overpriced mtx
+
+## Output format
+
+```
+{
+  "Map Name": {
+    "tier#": owned#,
+    "tier#": owned#,
+    "tier#": owned#,
+  },
+  "Map Name": {
+    "tier#": owned#
+  },
+  (...)
+}
+```
