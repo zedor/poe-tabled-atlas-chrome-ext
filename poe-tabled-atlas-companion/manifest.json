@@ -1,0 +1,16 @@
+{
+  "name": "PoE Tabled Atlas Companion",
+  "description": "Extension for grabbing map data off PoE API",
+  "version": "1.0.0",
+  "permissions": ["contextMenus", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "externally_connectable": {
+  	"matches": [
+      "*://zedor.github.io/*"
+    ]
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu3nJ/hG9646wb+0JdzgkX/VhoAtpPSBxXL3lZrUqcKOHjy6JzjYhPoI3O05EETP4wDZ56MDSK1hOVcu/efNCCVDkjBSGcQiK7NnIhFIafslXCAjB/afo0SeV3Qze4H1M9X/PX+ONZiyKt3L1FqusRb1wQ8eoOVE8MutPKVz9z5ROcs4Q+UYIPI23LmES8M2wayUwyt+x2yguzh2beDcavSvKKF537M+rl94tVVmcLlRAgLX+Pfa0t3bvzFrGenEo5qdt8quvLikwtyWqD1VeY06x4vk0ROa5xS9rLfEzFUsKjOfl9dFp1cacr0RCEz8dvCp/NnKy5xLg0vqOLgY0rwIDAQAB",
+  "manifest_version": 2
+}

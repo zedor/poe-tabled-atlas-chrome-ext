@@ -1,0 +1,19 @@
+{
+	"account": "myaccountname",		// duh
+	"map_series": "metamorph",		// changes between leagues, case sensitive(I think)
+	"league": "Metamorph", 			// Standard, Hardcore, Metamorph, Metamorph Hardcore -- changes between leagues, case sensitive
+	"maps": [
+		{
+			"name": "Beach Map",
+			"tiers": [				// has to always be an array
+				1
+			]
+		},
+		{
+			"name": "Leyline Map",
+			"tiers": [
+				3, 6, 10, 12, 14
+			]
+		}
+	]
+}
