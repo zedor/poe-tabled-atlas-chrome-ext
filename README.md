@@ -7,7 +7,7 @@ Alternative AHK script for data grabbing: https://github.com/zedor/poe-map-grabb
 
 ## How to use
 
-1. Grab the unpacked (.zip) extension and load it in your chrome with [developer mode enabled](https://developers.chrome.com/extensions/faq#faq-dev-01), or grab the .crx file and drag it to chrome.
+1. Grab the .zip, unpack it and load unpacked it in your chrome with [developer mode enabled](https://developers.chrome.com/extensions/faq#faq-dev-01), or grab the .crx file and drag it to chrome.
 2. Navigate to [PoE Tabled Atlas](https://zedor.github.io/poe-tabled-atlas/), input account name, select desired tiers and finally click *Query* to start the grabbing process.
 3. Data is shown on the site, along with an export action (JSON stringified object) for any other possible uses of the data.
 
